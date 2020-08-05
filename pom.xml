@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.undertow</groupId>
+    <artifactId>undertow-test</artifactId>
+    <version>1.0.0</version>
+    <name>Undertow EE9 Test</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <undertow.version>2.1.4.Final-SNAPSHOT</undertow.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>5.0.0-M2</version>
+        </dependency>
+        <!-- Undertow support -->
+        <dependency>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-jakartaee9</artifactId>
+            <version>${undertow.version}</version>
+        </dependency>
+    </dependencies>
+</project>
